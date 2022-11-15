@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+cout<<("Nama : Agil Abrar\n");
+	cout<<("Nim :22343018\n");
+	cout<<("Prodi : Informatika\n");
+	
+	cout<<("-----Program mengisi suatu matriks dgn ukuran(ordo) tertentu dan menampilkannya ke layar-----\n\n\n");
+
+   int baris, kolom, i, j, matrik[20][20];
+
+   cout<<("Input jumlah baris matrik : ");
+   cin>>baris;
+   cout<<("Input jumlah kolom matrik : ");
+   cin>>kolom;
+   cout<<("Input nilai matrik  : ");
+   for (i = 0; i < baris; i++){
+      for (j = 0; j < kolom; j++){
+      cout<<"Input Matriks  "<<i+1,j+1;
+  cin>>matrik[i][j];
+      }
+   }
+   cout<<("Matrik:\n");
+   for (i=0; i<baris; i++){
+    for (j=0; j<kolom; j++){
+     cout<<("%2d", matrik[i][j]);
+    }
+     cout<<("\n");
+   }
+   return 0;
+}
